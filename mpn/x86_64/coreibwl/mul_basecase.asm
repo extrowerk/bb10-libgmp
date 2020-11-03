@@ -94,7 +94,6 @@ IFDOS(`	mov	56(%rsp), %r8d	')
 
 L(s11):	mov	%rax, (rp)
 	mov	%r9, 8(rp)
-	FUNC_EXIT()
 	ret
 
 L(s2x):	cmp	$2, vn
@@ -106,7 +105,6 @@ L(s21):	add	%r8, %r9
 	mov	%rax, (rp)
 	mov	%r9, 8(rp)
 	mov	%r10, 16(rp)
-	FUNC_EXIT()
 	ret
 
 L(s22):	add	%r8, %r9		C 1
@@ -123,7 +121,6 @@ L(s22):	add	%r8, %r9		C 1
 	mov	%r9, 8(rp)
 	mov	%r10, 16(rp)
 	mov	%rdx, 24(rp)
-	FUNC_EXIT()
 	ret
 
 	ALIGN(16)
@@ -297,7 +294,6 @@ L(done):
 	pop	%r12
 	pop	%rbp
 	pop	%rbx
-	FUNC_EXIT()
 	ret
 
 L(f2):

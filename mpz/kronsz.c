@@ -72,7 +72,7 @@ mpz_si_kronecker (long a, mpz_srcptr b)
       /* b odd */
 
       result_bit1 ^= JACOBI_ASGN_SU_BIT1 (a, b_low);
-      a_limb = ABS_CAST(mp_limb_t, a);
+      a_limb = (unsigned long) ABS(a);
 
       if ((a_limb & 1) == 0)
 	{

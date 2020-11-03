@@ -41,7 +41,7 @@ the GNU MP Library test suite.  If not, see https://www.gnu.org/licenses/.  */
 
 extern char point_string[];
 
-#if HAVE_LOCALECONV && ! defined __MINGW32__
+#if HAVE_LOCALECONV
 struct lconv *
 localeconv (void)
 #if defined __cplusplus && defined __GLIBC__

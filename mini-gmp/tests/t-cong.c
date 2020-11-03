@@ -106,7 +106,7 @@ check_data (void)
   };
 
   mpz_t   a, c, d;
-  unsigned   i;
+  int     i;
 
   mpz_init (a);
   mpz_init (c);
